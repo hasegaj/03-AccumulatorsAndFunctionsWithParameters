@@ -38,7 +38,7 @@ def main():
 def run_test_sum_of_digits():
     """ Tests the  sum_of_digits   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function, as follows:
+    # Done: 2. Implement this TEST function, as follows:
     #
     #  Step 1:  This TEST function tests the  sum_of_digits  function.
     #    So read the doc-string of the  sum_of_digits  function
@@ -122,7 +122,7 @@ def sum_of_digits(number):
 def run_test_digits_in_cube():
     """ Tests the   digits_in_cube   function. """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this function.
+    # Done: 3. Implement this function.
     #   It TESTS the  digits_in_cube  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -142,10 +142,29 @@ def run_test_digits_in_cube():
     #
     #   Include at least **   3   ** tests.
     # -------------------------------------------------------------------------
+
     print()
     print('-----------------------------------------------------')
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
+
+    #test 1
+    expected = 9
+    answer = digits_in_cube(3)
+    print('test 1 expected', expected)
+    print('        actual: ', answer)
+
+    #test 2
+    expected = 10
+    answer = digits_in_cube(4)
+    print('test 2 expected', expected)
+    print('     actual: ', answer)
+
+    #test 3
+    expected = 9
+    answer = digits_in_cube(6)
+    print('test 3 expected', expected)
+    print('     actual: ', answer)
 
 
 def digits_in_cube(n):
@@ -157,8 +176,15 @@ def digits_in_cube(n):
       If the integer (n) is 5    (so n cubed is 125),
       this function returns (1 + 2 + 5), which is 8.
     """
+    whale = n ** 3
+    return sum_of_digits(whale)
+
+
+
+
+
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # Done: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
